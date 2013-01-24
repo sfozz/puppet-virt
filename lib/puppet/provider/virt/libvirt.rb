@@ -180,6 +180,7 @@ Puppet::Type.type(:virt).provide(:libvirt) do
     end
 
     def interfaces
+      resource[:interfaces]
     end
 
     def interfaces=(value)
